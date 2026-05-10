@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Realm - Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Entrance</a></li>
+            <li><a href="#gallery">Pensieve</a></li>
+            <li><a href="#blog">Daily Prophet</a></li>
+            <li><a href="#contact">Owl Post</a></li>
+        </ul>
+    </nav>
+
+    <div class="magic-dust"></div>
+
+    <section id="home">
+        <div class="parchment-card">
+            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=300&q=80" alt="Foto Profil Matthew" class="profile-img">
+            
+            <h1>Selamat Datang di Personal Homepage Saya</h1>
+            <p><i>“Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.”</i></p>
+            
+            <hr class="magic-divider">
+            
+            <p>Halo! Kamu baru saja masuk ke dalam portal digital milik <strong>Matthew Jocom</strong>. Saat ini, saya sedang menempuh perjalanan sebagai mahasiswa <strong>Teknik Informatika di Universitas Sam Ratulangi Manado</strong>, angkatan '24.</p>
+            
+            <p>Di luar kesibukan menyusun logika dan kode, saya adalah seorang penikmat cerita dalam segala bentuk. Mulai dari maraton film, anime, series, hingga kartun—semuanya adalah pelarian favorit saya. Selain itu, dunia game adalah tempat bermain saya yang kedua; entah itu menyusun strategi di atas <i>board game</i>, hingga keseruan di <i>video game</i> baik lewat PC, konsol, maupun <i>handphone</i>.</p>
+            
+            <p>Senang bertemu denganmu di sini. Silakan jelajahi sisi lain dari dunia saya!</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Pensieve: Memori Visual Matthew</h2>
+        <p class="subtitle">*Sentuh lukisan untuk melihatnya lebih dekat*</p>
+        
+        <div class="gallery-grid">
+            <div class="frame"><img src="image_0.jpeg" alt="Coding Setup" class="gallery-img"></div>
+            <div class="frame"><img src="image_1.jpeg" alt="Harry Potter Items" class="gallery-img"></div>
+            <div class="frame"><img src="image_2.jpeg" alt="Joseph Joestar Propaganda Poster" class="gallery-img"></div>
+            <div class="frame"><img src="image_3.jpeg" alt="Pile of Playing Cards" class="gallery-img"></div>
+        </div>
+
+        <div class="get-to-know-me">
+            <h3>Lebih Dekat dengan Matthew Jocom</h3>
+            <p>Ini adalah sekumpulan memori tentang hal-hal yang membuat saya senang dan gambaran dari hobi-hobi saya.</p>
+            
+            <p>Di gambar pertama, ialah gambaran tentang program studi yang saya lagi pelajari sekarang yaitu informatika. Lalu, item Harry Potter yang mewakili kegemaran saya pada dunia sihir, dan poster Jojo karena saya suka jojo.</p>
+            
+            <p>Terakhir, ada tumpukan kartu karena saya sangat suka untuk bermain game yang berbasis kartu baik itu board game ataupun video game.</p>
+            
+            <p>Singkatnya, inilah dunia saya: perpaduan antara teknologi, fantasi, dan permainan. Senang berbagi memori ini denganmu!</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Daily Prophet: berita Terkini</h2>
+        <div class="blog-grid" id="blog-container"></div>
+    </section>
+
+    <div id="article-modal" class="lightbox">
+        <div class="article-content parchment-bg">
+            <span class="close-article close-btn">&times;</span>
+            <h2 id="article-title">Judul Artikel</h2>
+            <div id="article-body">Isi artikel akan muncul di sini...</div>
+        </div>
+    </div>
+
+<section id="contact">
+        <h2>Kirimkan Burung Hantu (Owl Post)</h2>
+        <div class="parchment-card contact-form-container">
+            
+            <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px dashed #c8a97e; padding-bottom: 20px;">
+                <p style="font-style: italic; font-size: 1.1rem; margin-bottom: 15px;">
+                    "We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are."
+                </p>
+                <p style="font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: bold; color: var(--gryffindor-red);">
+                    Matthew Jocom
+                </p>
+                <p style="font-family: 'Lora', serif; font-size: 1rem; margin-top: 5px;">
+                    ✉️ <a href="mailto:matthewjocom026@student.unsrat.ac.id" style="color: var(--text-dark); text-decoration: none; font-weight: bold;">matthewjocom026@student.unsrat.ac.id</a>
+                </p>
+            </div>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nama">Nama Penyihir (Nama Anda):</label>
+                    <input type="text" id="nama" name="nama" placeholder="Cth: Harry Potter">
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat Muggle (Email):</label>
+                    <input type="email" id="email" name="email" placeholder="Cth: hedwig@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan Gulungan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan mantra atau pesan Anda di sini..."></textarea>
+                </div>
+                <button type="submit" class="magic-btn" style="width: 100%;">Kirim Mantra 🪄</button>
+            </form>
+            <div id="form-message" style="margin-top: 15px; font-weight: bold; display: none; text-align: center;"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Magical Web - <i>Mischief Managed!</i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
